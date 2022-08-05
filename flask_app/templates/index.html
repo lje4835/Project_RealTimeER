@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>심장마비 예측</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/static/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/static/png-clipart-emoji-ambulance-emergency-service-emergency-medical-services-emoji-car-ambulance.png" alt="" width="120" height="70">
+      <h2>Heart Attack Prediction</h2>
+      <p class="lead">환자의 임상 정보를 입력하세요.</p>
+    </div>
+    <center>
+      <form method="POST" action="/result">
+
+            <div class="col-5">
+              <label for="age" class="form-label">나이</label>
+              <input type="text" class="form-control" name="age" id="age" placeholder="50" required>
+              <div class="invalid-feedback">
+                Please enter patients' age.
+              </div>
+            </div>
+
+            <div class="col-5">
+              <label for="sex" class="form-label">성별</label>
+              <select class="form-select" id="sex" name="sex" required>
+                <option value="">선택</option>
+                <option value="0">여자</option>
+                <option value="1">남자</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid sex.
+              </div>
+            </div>
+
+            <div class="col-5">
+              <label for="cp" class="form-label">흉통유형</label>
+              <select class="form-select" id="cp" name="cp" required>
+                <option value="">선택</option>
+                <option value="0">무증상</option>
+                <option value="1">일반적이지 않은 협심증</option>
+                <option value="2">협심증이 아닌 통증</option>
+                <option value="3">일반적인 협심증</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid chest pain type.
+              </div>
+            </div>
+
+            <div class="col-5">
+              <label for="trtbps" class="form-label">안정 시 수축기 혈압</label>
+              <input type="text" class="form-control" name="trtbps" id="trtbps" placeholder="120" required>
+              <div class="invalid-feedback">
+                Please enter patients' resting bp.
+              </div>
+            </div>
+
+            <div class="col-5">
+              <label for="chol" class="form-label">총 콜레스테롤</label>
+              <input type="text" class="form-control" name="chol" id="chol" placeholder="200" required>
+              <div class="invalid-feedback">
+                Please enter patients' serum cholestoral.
+              </div>
+            </div>
+
+            <div class="col-5">
+              <label for="fbs" class="form-label">공복 시 혈당</label>
+              <select class="form-select" name="fbs" id="fbs" required>
+                <option value="">선택</option>
+                <option value="0">120 mg/dl 이하</option>
+                <option value="1">120 mg/dl 초과</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid fasting blood sugar.
+              </div>
+            </div>
+
+            <div class="col-5">
+              <label for="restecg" class="form-label">안정기 심전도 결과</label>
+              <select class="form-select" name="restecg" id="restecg" required>
+                <option value="">선택</option>
+                <option value="0">좌심실 비대 가능성</option>
+                <option value="1">정상</option>
+                <option value="2">ST-T 파 이상</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid restecg.
+              </div>
+            </div>
+
+            <div class="col-5">
+              <label for="thalachh" class="form-label">최대 심박수</label>
+              <input type="text" class="form-control" name="thalachh" id="thalachh" placeholder="200" required>
+              <div class="invalid-feedback">
+                Please enter patients' max heart rate.
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div>
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue</button>
+              </div>
+      </form>
+    </center>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2022 AI_09_이지은</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="/static/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="/static/form-validation.js"></script>
+  </body>
+</html>

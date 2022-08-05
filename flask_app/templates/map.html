@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>전국 실시간 응급실 병상 정보</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=lwenfn0sgu"></script>
+    <style>
+        body {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+#navbar {
+    height: 50px;
+    width: 100%;
+    background: #262626;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infoBox {
+    position: absolute;
+    top: 100px;
+    z-index: 10000;
+    background: white;
+    left: 20px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    text-align: center;
+}
+
+#infoTitle {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.marker {
+    border: 1px solid black;
+    background: green;
+    opacity: 0.8;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+    </style>
+
+</head>
+<body>
+    <div id="navbar">전국 실시간 응급실 병상 정보</div>
+    <div id="infoBox">
+        <div id="infoTitle">현재날짜</div>
+        <div id="infoContent">2022.02.15</div>
+    </div>
+    <div id="map" style="width:100%;height:100vh;"></div>
+    <script>
+    var mapOptions = {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+
+marker = new naver.maps.Marker({
+    map : map,
+    position: new naver.maps.LatLng(37.3595704, 127.105399),
+    icon : {
+    content : "<div class='marker'></div>"
+}
+})
+
+var data = [
+    {
+        title: "서울",
+        content: "서울 남산",
+        date: "2022-02-15",
+        lat: 37.554540, 
+        lng: 126.980884,
+    },{
+        title: "서울",
+        content: "서울 용산",
+        date: "2022-02-15",
+        lat: 37.522445, 
+        lng: 126.983850,
+    },
+];
+
+var markerlist = [];
+var infowindowlist = [];
+
+for (var i in data) {
+    var target = data[i];
+    var latlng = new naver.maps.LatLng(target.lat, target.lng);
+    marker = new naver.maps.Marker({
+        map : map,
+        position : latlng,
+        icon : {
+            content : "<div class='marker'></div>",
+            anchor: new naver.maps.Point(12, 12)
+        },
+    });
+
+    var content = `${target}`
+}
+</script>
+</body>
+</html>

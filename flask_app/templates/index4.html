@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>위치 정보</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/static/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/static/png-clipart-emoji-ambulance-emergency-service-emergency-medical-services-emoji-car-ambulance.png" alt="" width="120" height="70">
+      <h2>{{ y_pred }}</h2>
+      <p class="lead">현재 위치 정보를 입력하세요.</p>
+    </div>
+    <center>
+      <form method="POST" action="/table">
+            <div class="col-5">
+              <label for="sido" class="form-label">시도</label>
+              <input type="text" class="form-control" name="sido" id="sido" placeholder="서울특별시" required>
+              <div class="invalid-feedback">
+                Please enter your sido.
+              </div>
+            </div>
+
+            <div class="col-5">
+                <label for="sigungu" class="form-label">시군구</label>
+                <input type="text" class="form-control" name="sigungu" id="sigungu" placeholder="종로구" required>
+                <div class="invalid-feedback">
+                  Please enter your sigungu.
+                </div>
+              </div>
+
+            <hr class="my-4">
+
+            <div>
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue</button>
+              </div>
+      </form>
+    </center>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2022 AI_09_이지은</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="/static/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="/static/form-validation.js"></script>
+  </body>
+</html>
