@@ -1,12 +1,19 @@
-# Project_RealTime_EmergencyRoom
+# Real Time Emergency Room
 ---
 ### 심장마비 예측 실시간 응급실 병상 정보 서비스
----
 프로젝트 기간 : 2022.02.11 - 2022.02.16
 #
 #
-### 개요
+
 ---
-환자의 임상정보를 토대로 4대 중증응급질환(심혈관, 뇌혈관, 중증외상, 심정지) 중 하나인 심장마비 가능성을 예측하고, 현재 위치정보를 바탕으로 실시간 응급실 병상 정보를 제공하는 서비스입니다. AI가 환자의 임상정보를 분석하여 ‘시간 제한성 질환’ 이라 불리는 중증응급질환을 예측하므로, 병원 도착 전 구급대원의 상황판단에 도움을 주어 적절한 응급조치를 취할 수 있도록 하고, 현재 위치 정보에서 가까운 병원 응급실의 실시간 가용 병상정보를 제공하여 구급차가 최적의 경로로 신속하게 환자를 이송할 수 있도록 합니다.
-
-
+![001](https://user-images.githubusercontent.com/93903494/183252315-2fdc2375-3cec-4f96-b46a-4207acb3335d.png)
+![002](https://user-images.githubusercontent.com/93903494/183252320-e451147b-cfa3-4b97-af76-110031bc9bd0.png)
+![003](https://user-images.githubusercontent.com/93903494/183252325-44795e83-2325-46a0-a9dc-d589a5e855fc.png)
+![004](https://user-images.githubusercontent.com/93903494/183252330-cfb4c2b8-8476-4cb5-bd3f-99b1510c4684.png)
+![005](https://user-images.githubusercontent.com/93903494/183252333-006b8032-1a71-4dd0-9992-eefbf91f26f7.png)
+![006](https://user-images.githubusercontent.com/93903494/183252337-55b1982b-ea5f-46ca-afc4-eeff0dc21f2e.png)
+![007](https://user-images.githubusercontent.com/93903494/183252338-773d6d06-c89b-4f22-8aaa-9db84ea6ca30.png)
+![008](https://user-images.githubusercontent.com/93903494/183252343-c6118335-93b8-4aa1-8060-ff4a32474bdd.png)
+![009](https://user-images.githubusercontent.com/93903494/183252344-c4157f63-365e-4122-a803-576537761129.png)
+![010](https://user-images.githubusercontent.com/93903494/183252347-82227007-46cb-4dce-814a-b66ab06c4cc0.png)
+![011](https://user-images.githubusercontent.com/93903494/183252351-ded95522-699c-402f-af79-fbe5e02002a2.png)
