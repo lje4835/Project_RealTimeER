@@ -1,7 +1,7 @@
 # Real Time Emergency Room
 ## 심장마비 예측 실시간 응급실 병상 정보 서비스  
 프로젝트 기간 : 2022.02.11 - 2022.02.16
-## 데이터셋
+### 데이터셋
 https://www.data.go.kr/data/15000563/openapi.do  
 https://www.kaggle.com/datasets/imnikhilanand/heart-attack-prediction
 #
